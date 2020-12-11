@@ -1,5 +1,4 @@
 const pool = require('../db/connection')
-const _ = require('lodash')
 const reverse = require('../../01/reverseString')
 const fibonacci = require('../../02/fibonacci')
 const combination = require('../../03/combination')
