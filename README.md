@@ -2,7 +2,7 @@
 
 After clone this repo, run `npm install`
 
-Rename/duplicate `.env.example` to `.env` and setup server environment (e.g. server port)
+Rename/duplicate `.env.template` to `.env` and setup server environment (e.g. server port)
 
 Create database and name it according to `.env`
 
