@@ -1,12 +1,14 @@
-function fibonacci(numMax){
-  let fibArray = [0, 1]
+function fibonacci(n) {
+  let f = [0, 1]
 
-  for (let i = 0, j = 1, k = 0; k < numMax; i = j, j = x, k++ ) {
-    x = i + j;
-    fibArray.push(x);
+  // next = prev + one before prev
+  for (i = 2; i <= n+1; i++) {
+    f[i] = f[i - 1] + f[i - 2];
+
+    console.log(f)
   }
 
-  return fibArray.join(" ");
+  return f.join(" ");
 }
 
 module.exports = fibonacci

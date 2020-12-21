@@ -1,7 +1,5 @@
 const factorial = n => {
-  if (n === 0 || n === 1) return 1
-
-  return n * factorial(n - 1)
+  return (n <= 0 ? 1 : (n * factorial(n - 1)))
 }
 
 function combination(n, r) {
@@ -9,5 +7,20 @@ function combination(n, r) {
      factorial(n) / (factorial(r) * factorial(n - r))
   )
 }
+
+function pyramid(param) {
+  let pattern = "";
+
+  for (let i = 1; i <= param; i++) {
+    for (let j = 1; j <= i; j++) {
+      pattern += "*"
+    }
+
+    pattern += '\n'
+  }
+  console.log(pattern);
+}
+
+pyramid(5)
 
 module.exports = combination
